@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Testing;
+using UnityEditor;
 using UnityEngine;
 
 namespace Brigantin
@@ -14,7 +15,7 @@ namespace Brigantin
 
             public int blackScreenDelay { get; set; }
             private GameObject goGhost;
-            private GameObject goBlackScreen;
+            private GameObject goBlackScreen { get; set; }
 
             private void Awake()
             {
@@ -28,7 +29,7 @@ namespace Brigantin
                 // -------------------
 
                 goGhost = GameObject.Find("Ghost");
-                goBlackScreen = GameObject.Find("Black Screen");
+                goBlackScreen = GameObject.Find("Canvas - Black Screen");
 
                 goBlackScreen.SetActive(false);
             }
@@ -38,6 +39,11 @@ namespace Brigantin
                 // DO NOT REMOVE -----
                 base.FixedUpdate();
                 // -------------------
+
+                if(Input.GetButtonDown("A_Button"))
+                {
+                    OnAButton();
+                }
             }
 
             public override void TimedUpdate()
@@ -58,6 +64,11 @@ namespace Brigantin
                 {
                     Manager.Instance.Result(true);
                 }
+            }
+
+            private void OnAButton()
+            {
+
             }
         }
     }
