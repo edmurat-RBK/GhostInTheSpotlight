@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MicroGames/Cluster Theodore/TrioBrigantin/FantomeSousLesProjecteurs/FantomeSousLesProjecteurs.unity
     guid: 3ee12d34d8ef07e45ba3205c88c24f63
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioBrigantin/FantomeSousLesProjecteurs/FantomeSousLesProjecteurs.unity
+    guid: 3ee12d34d8ef07e45ba3205c88c24f63
   m_configObjects: {}
