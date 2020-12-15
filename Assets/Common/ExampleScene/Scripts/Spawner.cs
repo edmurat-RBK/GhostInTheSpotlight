@@ -32,13 +32,12 @@ namespace ExampleScene
         public TextMeshProUGUI bpmText;
         public Slider timerUI;
         public TextMeshProUGUI tickNumber;
-        public Image input;
 
         public override void Start()
         {
             base.Start();
             bpmText.text = "bpm: " + bpm.ToString();
-            if (Manager.Instance.currentDifficulty == Manager.Difficulty.HARD)
+            if (Manager.Instance.currentDifficulty == Difficulty.HARD)
                 isHard = true;
             spawnCooldown = 60 / bpm;
         }
@@ -55,11 +54,8 @@ namespace ExampleScene
             base.TimedUpdate();
             if (canSpawn)
             {
-
-                if (Tick == 1)
-                    input.gameObject.SetActive(false);
-
-                if (Tick > 1 && Tick<8)
+             
+                if ( Tick<8)
                 {
                     if (!isHard)
                         NormalSpawn();

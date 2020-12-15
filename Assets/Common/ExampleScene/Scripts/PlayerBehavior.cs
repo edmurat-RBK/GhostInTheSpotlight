@@ -14,11 +14,11 @@ namespace ExampleScene
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position != rightPosition)
+            if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetAxis("Left_Joystick_X") > 0.8f) && transform.position != rightPosition)
             {
                 transform.position = rightPosition;
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position != leftPosition)
+            else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("Left_Joystick_X") < -0.8f) && transform.position != leftPosition)
             {
                 transform.position = leftPosition;
             }

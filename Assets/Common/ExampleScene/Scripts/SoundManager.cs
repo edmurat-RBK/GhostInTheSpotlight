@@ -14,10 +14,10 @@ namespace ExampleScene
             base.Start();
             switch (bpm)
             {
-                case (float)Manager.BPM.Slow:
+                case (float)BPM.Slow:
                     globalMusic[0].Play();
                     break;
-                case (float)Manager.BPM.SuperFast:
+                case (float)BPM.SuperFast:
                     globalMusic[1].Play();
                     break;
                 default:

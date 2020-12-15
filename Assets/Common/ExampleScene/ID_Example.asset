@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cluster: 0
   trio: Brigantin
-  haptiqueChal: 0
-  inputChal: 0
   indexEnum: 0
+  verbe: Dodge left/right
   microGameScene:
     sceneAsset: {fileID: 102900000, guid: 5a69eb2c7d8cf83418eec73e0e0afa85, type: 3}
     required: 0
-    buildIndex: 0
+    buildIndex: 1
+  inputs: {fileID: 21300000, guid: 832294a9a56a63641a4b2fbb48b9a984, type: 3}
+  currentDifficulty: 0
+  idWeight: 0
+  hasBarrel: 0

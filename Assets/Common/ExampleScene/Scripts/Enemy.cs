@@ -15,9 +15,10 @@ namespace ExampleScene
 
         private void Start()
         {
-            if(Manager.Instance.currentDifficulty >= Manager.Difficulty.MEDIUM)
+            speed = speed * (float)Manager.Instance.bpm / (float)BPM.Slow ;
+            if(Manager.Instance.currentDifficulty >= Difficulty.MEDIUM)
             {
-                speed = speed * 1.2f;
+                speed = speed * 1.1f;
             }
         }
 

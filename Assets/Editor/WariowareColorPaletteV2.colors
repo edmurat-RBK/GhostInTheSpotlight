@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12323, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: WariowareColorPaletteV2
+  m_EditorClassIdentifier: 
+  m_Presets:
+  - m_Name: Sable
+    m_Color: {r: 0.93725497, g: 0.93725497, b: 0.654902, a: 1}
+  - m_Name: Ecume
+    m_Color: {r: 0.82745105, g: 0.9058824, b: 0.8705883, a: 1}
+  - m_Name: Mer
+    m_Color: {r: 0.20392159, g: 0.5686275, b: 0.6666667, a: 1}
+  - m_Name: MerProfonde
+    m_Color: {r: 0.19215688, g: 0.38431376, b: 0.47450984, a: 1}
+  - m_Name: FeuillageLight
+    m_Color: {r: 0.64705884, g: 0.7568628, b: 0.30980393, a: 1}
+  - m_Name: Feuillage
+    m_Color: {r: 0.34509805, g: 0.62352943, b: 0.20392159, a: 1}
+  - m_Name: Buisson
+    m_Color: {r: 0.20392159, g: 0.47058827, b: 0.2784314, a: 1}
+  - m_Name: BuissonOmbre
+    m_Color: {r: 0.14901961, g: 0.24705882, b: 0.13333334, a: 1}
+  - m_Name: BoisLight
+    m_Color: {r: 0.8235295, g: 0.5764706, b: 0.34901962, a: 1}
+  - m_Name: Bois
+    m_Color: {r: 0.6, g: 0.3372549, b: 0.18823531, a: 1}
+  - m_Name: Bois2
+    m_Color: {r: 0.38431376, g: 0.21568629, b: 0.08627451, a: 1}
+  - m_Name: BoisSombre
+    m_Color: {r: 0.21960786, g: 0.1254902, b: 0.06666667, a: 1}
+  - m_Name: Blanc
+    m_Color: {r: 0.95294124, g: 0.9176471, b: 0.8941177, a: 1}
+  - m_Name: Noir
+    m_Color: {r: 0.09411766, g: 0.09411766, b: 0.09019608, a: 1}
+  - m_Name: MetalAluminium
+    m_Color: {r: 0.7686275, g: 0.80392164, b: 0.80392164, a: 1}
+  - m_Name: MetalChrome
+    m_Color: {r: 0.5254902, g: 0.58431375, b: 0.6, a: 1}
+  - m_Name: MetalZinc
+    m_Color: {r: 0.3019608, g: 0.32941177, b: 0.34901962, a: 1}
+  - m_Name: MetalAcier
+    m_Color: {r: 0.14509805, g: 0.16862746, b: 0.1764706, a: 1}
+  - m_Name: Roche
+    m_Color: {r: 0.74509805, g: 0.25490198, b: 0.26666668, a: 1}
+  - m_Name: RocheOmbre
+    m_Color: {r: 0.57254905, g: 0.16862746, b: 0.18823531, a: 1}
+  - m_Name: Nuage
+    m_Color: {r: 0.8078432, g: 0.86666673, b: 0.87843144, a: 1}
+  - m_Name: Ciel
+    m_Color: {r: 0.50980395, g: 0.7411765, b: 0.7490196, a: 1}
+  - m_Name: Soleil
+    m_Color: {r: 0.94117653, g: 0.79215693, b: 0.2784314, a: 1}
