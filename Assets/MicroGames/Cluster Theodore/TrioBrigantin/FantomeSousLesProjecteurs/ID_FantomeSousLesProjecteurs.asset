@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cluster: 0
   trio: Brigantin
-  haptiqueChal: 0
-  inputChal: 0
   indexEnum: 0
+  verbe: "Rep\xE8re"
   microGameScene:
     sceneAsset: {fileID: 102900000, guid: 3ee12d34d8ef07e45ba3205c88c24f63, type: 3}
     required: 0
     buildIndex: 0
+  inputs: {fileID: 0}
+  currentDifficulty: 0
+  idWeight: 0
+  hasBarrel: 0

@@ -23,7 +23,33 @@ namespace Brigantin
                 inArea = false;
             }
 
-            public void Update()
+            private void Start()
+            {
+                float iterationTime = 0.01f;
+
+                float _x = Random.Range(-0.5f, 0.5f);
+                float _y = Random.Range(-0.5f, 0.5f);
+                Vector3 reverseDirection = -direction;
+
+                for(float t=0; t<8; t += iterationTime)
+                {
+                    _x += reverseDirection.x * (speed * iterationTime);
+                    _y += reverseDirection.y * (speed * iterationTime);
+
+                    if(-10f > _y || _y > 10f)
+                    {
+                        reverseDirection = new Vector3(reverseDirection.x, -reverseDirection.y, 0f);
+                    }
+                    if (-17.8f > _x || _x > 17.8f)
+                    {
+                        reverseDirection = new Vector3(-reverseDirection.x, reverseDirection.y, 0f);
+                    }
+                }
+
+                transform.position = new Vector3(_x, _y, 0f);
+            }
+
+            private void Update()
             {
                 if (canMove)
                 {
