@@ -14,6 +14,7 @@ namespace Brigantin
             public int _blackScreenDelay;
 
             public int blackScreenDelay { get; set; }
+            public float maxGameTime { get; set; }
             private GameObject ghost { get; set; }
             private GhostMovement ghostMovement { get; set; }
             private GameObject blackScreen { get; set; }

@@ -16,6 +16,8 @@ namespace Brigantin
             public Vector3 direction { get; set; }
             public bool inArea { get; set; }
 
+            private MicroManager microManager;
+
             private void Awake()
             {
                 speed = _baseSpeed;
@@ -25,7 +27,9 @@ namespace Brigantin
 
             private void Start()
             {
+                microManager = GameObject.Find("Micro Manager").GetComponent<MicroManager>();
                 float iterationTime = 0.01f;
+                float randomTime = Random.Range(microManager.blackScreenDelay + 0.5f, microManager.maxGameTime - 0.5f);
 
                 float _x = Random.Range(-0.5f, 0.5f);
                 float _y = Random.Range(-0.5f, 0.5f);
