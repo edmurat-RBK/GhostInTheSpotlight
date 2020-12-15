@@ -10,6 +10,7 @@ namespace Brigantin
         {
             [Range(5,25)]
             public float _baseSpeed;
+            public bool canMove = true;
 
             public float speed { get; set; }
             public Vector3 direction { get; set; }
@@ -24,7 +25,10 @@ namespace Brigantin
 
             public void Update()
             {
-                transform.position = Vector3.MoveTowards(transform.position, transform.position + direction, speed * Time.deltaTime);
+                if (canMove)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, transform.position + direction, speed * Time.deltaTime);
+                }
             }
 
             private void OnCollisionEnter2D(Collision2D other)

@@ -14,8 +14,9 @@ namespace Brigantin
             public int _blackScreenDelay;
 
             public int blackScreenDelay { get; set; }
-            private GameObject goGhost;
-            private GameObject goBlackScreen { get; set; }
+            private GameObject ghost { get; set; }
+            private GhostMovement ghostMovement { get; set; }
+            private GameObject blackScreen { get; set; }
 
             private void Awake()
             {
@@ -28,10 +29,11 @@ namespace Brigantin
                 base.Start();
                 // -------------------
 
-                goGhost = GameObject.Find("Ghost");
-                goBlackScreen = GameObject.Find("Canvas - Black Screen");
+                ghost = GameObject.Find("Ghost");
+                ghostMovement = ghost.GetComponent<GhostMovement>();
+                blackScreen = GameObject.Find("Black Screen");
 
-                goBlackScreen.SetActive(false);
+                blackScreen.SetActive(false);
             }
 
             public override void FixedUpdate()
@@ -39,8 +41,11 @@ namespace Brigantin
                 // DO NOT REMOVE -----
                 base.FixedUpdate();
                 // -------------------
+            }
 
-                if(Input.GetButtonDown("A_Button"))
+            private void Update()
+            {
+                if (Input.GetButtonDown("A_Button"))
                 {
                     OnAButton();
                 }
@@ -54,21 +59,22 @@ namespace Brigantin
 
                 if(Tick == 1)
                 {
-                    goGhost.SetActive(true);
+                    ghost.SetActive(true);
                 }
                 else if(Tick == blackScreenDelay)
                 {
-                    goBlackScreen.SetActive(true);
+                    blackScreen.SetActive(true);
                 }
                 else if(Tick == 8)
                 {
-                    Manager.Instance.Result(true);
+                    Manager.Instance.Result(ghostMovement.inArea);
                 }
             }
 
             private void OnAButton()
             {
-
+                ghost.GetComponent<GhostMovement>().canMove = false;
+                blackScreen.SetActive(false);
             }
         }
     }
