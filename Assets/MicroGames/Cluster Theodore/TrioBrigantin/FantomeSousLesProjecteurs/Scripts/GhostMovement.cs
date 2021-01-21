@@ -8,8 +8,6 @@ namespace Brigantin
     {
         public class GhostMovement : MonoBehaviour
         {
-            [Range(5,25)]
-            public float _baseSpeed;
             public bool canMove = true;
 
             public float speed { get; set; }
@@ -17,10 +15,10 @@ namespace Brigantin
             public bool inArea { get; set; }
 
             private MicroManager microManager;
+            private Animator anim;
 
             private void Awake()
             {
-                speed = _baseSpeed;
                 direction = new Vector3((2 * Random.value - 1), (2 * Random.value - 1), 0f).normalized;
                 inArea = false;
             }
@@ -28,14 +26,15 @@ namespace Brigantin
             private void Start()
             {
                 microManager = GameObject.Find("Micro Manager").GetComponent<MicroManager>();
+                anim = GetComponent<Animator>();
                 float iterationTime = 0.01f;
                 float randomTime = Random.Range(microManager.blackScreenDelay + 0.5f, microManager.maxGameTime - 0.5f);
 
-                float _x = Random.Range(-0.5f, 0.5f);
-                float _y = Random.Range(-0.5f, 0.5f);
+                float _x = Random.Range(-0.25f, 0.25f);
+                float _y = Random.Range(-0.25f, 0.25f);
                 Vector3 reverseDirection = -direction;
 
-                for(float t=0; t<8; t += iterationTime)
+                for(float t=0; t<randomTime; t += iterationTime)
                 {
                     _x += reverseDirection.x * (speed * iterationTime);
                     _y += reverseDirection.y * (speed * iterationTime);
@@ -48,6 +47,15 @@ namespace Brigantin
                     {
                         reverseDirection = new Vector3(-reverseDirection.x, reverseDirection.y, 0f);
                     }
+                }
+
+                if(direction.x > 0)
+                {
+                    anim.SetBool("leftDirection", false);
+                }
+                else
+                {
+                    anim.SetBool("leftDirection", true);
                 }
 
                 transform.position = new Vector3(_x, _y, 0f);
@@ -70,6 +78,7 @@ namespace Brigantin
                 else if (other.gameObject.name.Equals("Left wall") || other.gameObject.name.Equals("Right wall"))
                 {
                     direction = new Vector3(-direction.x, direction.y, 0f);
+                    anim.SetBool("leftDirection", !anim.GetBool("leftDirection"));
                 }                
             }
 

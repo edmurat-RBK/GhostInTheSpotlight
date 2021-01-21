@@ -8,4 +8,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MicroGames/Cluster Theodore/TrioBrigantin/FantomeSousLesProjecteurs/FantomeSousLesProjecteurs.unity
     guid: 3ee12d34d8ef07e45ba3205c88c24f63
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioBrigantin/ACouteauxTires/ACouteauxTiresScene.unity
+    guid: 6d6c8e8566b0f174bafa03f5cc48c3d5
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioBrigantin/MiniGame1/MiniGame1Scene.unity
+    guid: d9c5ac4f20f3d714782b9336bedde35a
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioLeRafiot/123Requin_01/123Requin1Scene.unity
+    guid: a390dcaae7f88024697b093263341d5d
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioLeRafiot/Choppe_02/Choppe2Scene.unity
+    guid: 10c7c78062ee58540b288431812e4126
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioLeRafiot/Planche_03/Planche3Scene.unity
+    guid: 2eb72f07571d9f24f83eee65b45c087d
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioSpanishInquisition/Duel/Duel.unity
+    guid: 88e34718e0cc169479c18b1e17a70ecf
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioSpanishInquisition/MiniGame1/MiniGame1Scene.unity
+    guid: d1d641469f4b9814fba98db1b859e31e
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioSpanishInquisition/VegetablePirate/VegetablePirate.unity
+    guid: 090f472027b26f14d988c0016316069a
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioTrapioWare/MiniGame1/MiniGame1Scene.unity
+    guid: 724ee1f0c0f380b48a1d47eef7d0ee5d
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioTrapioWare/MiniGame3/Swipe.unity
+    guid: 535ec2bb8a65f414fb9c9315cba272c2
+  - enabled: 1
+    path: Assets/MicroGames/Cluster Theodore/TrioTrapioWare/Spin/Spin.unity
+    guid: 7c0f9a28b10ed9a41b377a84331ce307
   m_configObjects: {}

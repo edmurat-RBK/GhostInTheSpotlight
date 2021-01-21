@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cda822bfa80074f881e6fe0192b4c9, type: 3}
+  m_Name: ID_123Requin
+  m_EditorClassIdentifier: 
+  cluster: 0
+  trio: LeRafiot
+  indexEnum: 3
+  verbe: Ascend press A
+  microGameScene:
+    sceneAsset: {fileID: 102900000, guid: a390dcaae7f88024697b093263341d5d, type: 3}
+    required: 0
+    buildIndex: 3
+  inputs: {fileID: 21300000, guid: d72b0883f9f3802448f19183617de930, type: 3}
+  currentDifficulty: 0
+  idWeight: 0
+  hasBarrel: 0

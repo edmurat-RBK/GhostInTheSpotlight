@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cda822bfa80074f881e6fe0192b4c9, type: 3}
+  m_Name: ID_HisserLeDrapeau
+  m_EditorClassIdentifier: 
+  cluster: 0
+  trio: SpanishInquisition
+  indexEnum: 1
+  verbe: Hissez !
+  microGameScene:
+    sceneAsset: {fileID: 102900000, guid: d1d641469f4b9814fba98db1b859e31e, type: 3}
+    required: 0
+    buildIndex: 7
+  inputs: {fileID: 21300000, guid: aae03176476a32243b467f617c99e22f, type: 3}
+  currentDifficulty: 0
+  idWeight: 0
+  hasBarrel: 0

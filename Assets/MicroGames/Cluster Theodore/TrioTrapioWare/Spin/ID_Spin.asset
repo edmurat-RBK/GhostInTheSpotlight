@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cda822bfa80074f881e6fe0192b4c9, type: 3}
+  m_Name: ID_Spin
+  m_EditorClassIdentifier: 
+  cluster: 0
+  trio: TrapioWare
+  indexEnum: 2
+  verbe: "Tourne et l\xE2che"
+  microGameScene:
+    sceneAsset: {fileID: 102900000, guid: 7c0f9a28b10ed9a41b377a84331ce307, type: 3}
+    required: 0
+    buildIndex: 11
+  inputs: {fileID: 21300000, guid: 5f462786c8ad9024699cdfed6b123ec8, type: 3}
+  currentDifficulty: 0
+  idWeight: 0
+  hasBarrel: 0

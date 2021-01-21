@@ -15,7 +15,7 @@ MonoBehaviour:
   cluster: 0
   trio: Brigantin
   indexEnum: 0
-  verbe: "Rep\xE8re"
+  verbe: Eclairez
   microGameScene:
     sceneAsset: {fileID: 102900000, guid: 3ee12d34d8ef07e45ba3205c88c24f63, type: 3}
     required: 0
